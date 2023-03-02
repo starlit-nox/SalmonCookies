@@ -29,10 +29,10 @@
     }
     let hoursDemoSeattle = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
     let cookieDemoSeattle = [152,265,202,353,227,221,202,378,171,309,215,189,189,385];
-    let hoursArraySeattle = document.querySelector('.output')
+    let hoursArraySeattle = document.querySelector('.output1')
     for(let i = 0; i < hoursDemoSeattle.length; i++) {
         //hoursDemo[i].innerHTML
-        let variable = document.createElement("li");
+        let variable = document.createElement("ul");
         variable.innerHTML = `${hoursDemoSeattle[i]}: ${cookieDemoSeattle[i]} cookies`;
         hoursArraySeattle.append(variable);
     }
@@ -60,9 +60,10 @@
     }
     let hoursDemoTokyo = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
     let cookieDemoTokyo = [26, 27, 8, 5, 24, 10, 9, 6, 17, 15, 16, 18, 8, 19];
-    let hoursArrayTokyo = document.querySelector('.output')
+    let hoursArrayTokyo = document.querySelector('.output2')
+    console.log("hoursArrayTokyo", hoursArrayTokyo)
     for(let i = 0; i < hoursDemoTokyo.length; i++) {
-        let variable = document.createElement("li");
+        let variable = document.createElement("ul");
         variable.innerHTML = `${hoursDemoTokyo[i]}: ${cookieDemoTokyo[i]} cookies`;
         console.log(`${hoursDemoTokyo[1]}: ${cookieDemoTokyo[1]} cookies`)
         hoursArrayTokyo.append(variable);
@@ -91,9 +92,9 @@
     }
     let hoursDemoDubai = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
     let cookieDemoDubai = [77, 122, 74, 74, 100, 127, 120, 138, 108, 85, 120, 79, 115, 44];
-    let hoursArrayDubai = document.querySelector('.output')
+    let hoursArrayDubai = document.querySelector('.output3')
     for(let i = 0; i < hoursDemoDubai.length; i++) {
-        let variable = document.createElement("li");
+        let variable = document.createElement("ul");
         variable.innerHTML = `${hoursDemoDubai[i]}: ${cookieDemoDubai[i]} cookies`;
         console.log(`${hoursDemoDubai[1]}: ${cookieDemoDubai[1]} cookies`)
         hoursArrayDubai.append(variable);
@@ -122,9 +123,9 @@
     }
     let hoursDemoParis = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
     let cookieDemoParis = [80, 58, 85, 72, 78, 85, 56, 80, 67, 51, 85, 83, 66, 80];
-    let hoursArrayParis = document.querySelector('.output')
+    let hoursArrayParis = document.querySelector('.output4')
     for(let i = 0; i < hoursDemoParis.length; i++) {
-        let variable = document.createElement("li");
+        let variable = document.createElement("ul");
         variable.innerHTML = `${hoursDemoParis[i]}: ${cookieDemoParis[i]} cookies`;
         console.log(`${hoursDemoParis[1]}: ${cookieDemoParis[1]} cookies`)
         hoursArrayParis.append(variable);
@@ -153,9 +154,9 @@
     }
     let hoursDemoLima = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
     let cookieDemoLima = [28, 28, 68, 61, 58, 37, 61, 45, 63, 71, 30, 37, 25, 54];
-    let hoursArrayLima = document.querySelector('.output')
+    let hoursArrayLima = document.querySelector('.output5')
     for(let i = 0; i < hoursDemoLima.length; i++) {
-        let variable = document.createElement("li");
+        let variable = document.createElement("ul");
         variable.innerHTML = `${hoursDemoLima[i]}: ${cookieDemoLima[i]} cookies`;
         console.log(`${hoursDemoLima[1]}: ${cookieDemoLima[1]} cookies`)
         hoursArrayLima.append(variable);
