@@ -30,11 +30,11 @@
     // let hoursDemoSeattle = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
     // let cookieDemoSeattle = [152,265,202,353,227,221,202,378,171,309,215,189,189,385];
     seattle.getCookies();
-    let hoursArraySeattle = document.querySelector('.output1')
+    let hoursArraySeattle = document.querySelector('td')
     for(let i = 0; i < seattle.hoursOfOperation.length; i++) {
         //hoursDemo[i].innerHTML
-        let variable = document.createElement("ul");
-        variable.innerHTML = `${seattle.hoursOfOperation[i]}: ${seattle.cookiesPerHour[i]} cookies`;
+        let variable = document.createElement("td");
+        variable.innerHTML = `${seattle.cookiesPerHour[i]} cookies`;
         hoursArraySeattle.append(variable);
     }
 // tokyo sales 
@@ -65,8 +65,8 @@
     let hoursArrayTokyo = document.querySelector('.output2')
     // console.log("hoursArrayTokyo", hoursArrayTokyo)
     for(let i = 0; i < tokyo.hoursOfOperation.length; i++) {
-        let variable = document.createElement("ul");
-        variable.innerHTML = `${tokyo.hoursOfOperation[i]}: ${tokyo.cookiesPerHour[i]} cookies`;
+        let variable = document.createElement("td");
+        variable.innerHTML = `${tokyo.cookiesPerHour[i]} cookies`;
         // console.log(`${hoursDemoTokyo[1]}: ${cookieDemoTokyo[1]} cookies`)
         hoursArrayTokyo.append(variable);
     }
@@ -98,8 +98,8 @@
     let hoursArrayDubai = document.querySelector('.output3')
     // for(let i=0; i < this.hoursOfOperation.length; i++) {
     for(let i = 0; i < dubai.hoursOfOperation.length; i++) {
-        let variable = document.createElement("ul");
-        variable.innerHTML = `${dubai.hoursOfOperation[i]}: ${dubai.cookiesPerHour[i]} cookies`;
+        let variable = document.createElement("td");
+        variable.innerHTML = `${dubai.cookiesPerHour[i]} cookies`;
         // console.log(`${hoursDemoDubai[1]}: ${cookieDemoDubai[1]} cookies`)
         hoursArrayDubai.append(variable);
     }
@@ -130,8 +130,8 @@
     paris.getCookies();
     let hoursArrayParis = document.querySelector('.output4')
     for(let i=0; i < paris.hoursOfOperation.length; i++) {
-        let variable = document.createElement("ul");
-        variable.innerHTML = `${paris.hoursOfOperation[i]}: ${paris.cookiesPerHour[i]} cookies`;
+        let variable = document.createElement("td");
+        variable.innerHTML = `${paris.cookiesPerHour[i]} cookies`;
         // console.log(`${hoursDemoParis[1]}: ${cookieDemoParis[1]} cookies`)
         hoursArrayParis.append(variable);
     }
@@ -162,8 +162,12 @@
     lima.getCookies();
     let hoursArrayLima = document.querySelector('.output5')
     for(let i = 0; i < paris.hoursOfOperation.length; i++) {
-        let variable = document.createElement("ul");
-        variable.innerHTML = `${lima.hoursOfOperation[i]}: ${lima.cookiesPerHour[i]} cookies`;
+        let variable = document.createElement("td");
+        variable.innerHTML = `${lima.cookiesPerHour[i]} cookies`;
         // console.log(`${hoursDemoLima[1]}: ${cookieDemoLima[1]} cookies`)
         hoursArrayLima.append(variable);
     }
+
+    // Here is my attempt at times
+
+    // ${lima.hoursOfOperation[i]}: 
