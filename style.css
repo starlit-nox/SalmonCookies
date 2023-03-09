@@ -10,7 +10,7 @@ body{
     background-color: white;
 }
 
-table, tr, td {
+table, tr, td, div {
     background-color: white;
     font-family: 'IBM Plex Serif';
 }
@@ -70,9 +70,5 @@ table, tr, td {
 .footer{
     display: flex;
     justify-content: right;
-    flex-direction: column;
-}
-
-.footer .merch {
-    align-: center;
+    justify-content: space-evenly;
 }
