@@ -13,15 +13,11 @@ const seattle = {
     location: `Seattle`,
     hoursOfOperation: ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"],
     customersPerHour: function () {
-        console.log(this.max);
-        console.log(this.min);
         return getRandom(this.max, this.min);
     },
     cookiesPerHour: [],
     getCookies: function () {
         for (let i = 0; i < this.hoursOfOperation.length; i++) {
-            console.log(`seattle avg cookies/sale`, this.avg);
-            console.log(`seattle avg customers/hour`, this.customersPerHour());
             this.cookiesPerHour.push(Math.ceil(this.avg * this.customersPerHour()));
         }
         return this.cookiesPerHour;
@@ -49,15 +45,11 @@ const tokyo = {
     location: `Tokyo`,
     hoursOfOperation: ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"],
     customersPerHour: function () {
-        console.log(this.max);
-        console.log(this.min);
         return getRandom(this.max, this.min);
     },
     cookiesPerHour: [],
     getCookies: function () {
         for (let i = 0; i < this.hoursOfOperation.length; i++) {
-            console.log(`tokyo avg cookies/sale`, this.avg)
-            console.log(`tokyo avg custoemrs/hours`, this.customersPerHour());
             this.cookiesPerHour.push(Math.ceil(this.avg * this.customersPerHour()));
         }
         return this.cookiesPerHour;
@@ -66,12 +58,10 @@ const tokyo = {
 tokyo.getCookies();
 let totalToyka = 0;
 let hoursArrayTokyo = document.querySelector('.output2')
-// console.log("hoursArrayTokyo", hoursArrayTokyo)
 for (let i = 0; i < tokyo.hoursOfOperation.length; i++) {
     let variable = document.createElement("td");
     totalToyka = tokyo.cookiesPerHour[i] + totalToyka;
     variable.innerHTML = `${tokyo.cookiesPerHour[i]} cookies`;
-    // console.log(`${hoursDemoTokyo[1]}: ${cookieDemoTokyo[1]} cookies`)
     hoursArrayTokyo.append(variable);
 }
 let cookieTotal2 = document.createElement("td");
@@ -86,15 +76,11 @@ const dubai = {
     location: `Dubai`,
     hoursOfOperation: ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"],
     customersPerHour: function () {
-        console.log(this.max);
-        console.log(this.min);
         return getRandom(this.max, this.min);
     },
     cookiesPerHour: [],
     getCookies: function () {
         for (let i = 0; i < this.hoursOfOperation.length; i++) {
-            console.log(`tokyo avg cookies/sale`, this.avg)
-            console.log(`tokyo avg customers/hours`, this.customersPerHour());
             this.cookiesPerHour.push(Math.ceil(this.avg * this.customersPerHour()));
         }
         return this.cookiesPerHour;
@@ -110,10 +96,8 @@ for (let i = 0; i < dubai.hoursOfOperation.length; i++) {
     let variable = document.createElement("td");
     totalDubai = dubai.cookiesPerHour[i] + totalDubai;
     variable.innerHTML = `${dubai.cookiesPerHour[i]} cookies`;
-    // console.log(`${hoursDemoDubai[1]}: ${cookieDemoDubai[1]} cookies`)
     hoursArrayDubai.append(variable);
 }
-// console.log(`${totalDubai} my crappy code`);
 let cookieTotal = document.createElement("td");
 cookieTotal.innerHTML = `${totalDubai} cookies`;
 hoursArrayDubai.append(cookieTotal);
@@ -127,15 +111,11 @@ const paris = {
     location: `Paris`,
     hoursOfOperation: ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"],
     customersPerHour: function () {
-        console.log(this.max);
-        console.log(this.min);
         return getRandom(this.max, this.min);
     },
     cookiesPerHour: [],
     getCookies: function () {
         for (let i = 0; i < this.hoursOfOperation.length; i++) {
-            console.log(`tokyo avg cookies/sale`, this.avg)
-            console.log(`tokyo avg custoemrs/hours`, this.customersPerHour());
             this.cookiesPerHour.push(Math.ceil(this.avg * this.customersPerHour()));
         }
         return this.cookiesPerHour;
@@ -150,7 +130,6 @@ for (let i = 0; i < paris.hoursOfOperation.length; i++) {
     let variable = document.createElement("td");
     totalParis = paris.cookiesPerHour[i] + totalParis;
     variable.innerHTML = `${paris.cookiesPerHour[i]} cookies`;
-    // console.log(`${hoursDemoParis[1]}: ${cookieDemoParis[1]} cookies`)
     hoursArrayParis.append(variable);
 }
 let cookieTotal3 = document.createElement("td");
@@ -164,15 +143,11 @@ const lima = {
     location: `Lima`,
     hoursOfOperation: ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm", "Daily Total"],
     customersPerHour: function () {
-        console.log(this.max);
-        console.log(this.min);
         return getRandom(this.max, this.min);
     },
     cookiesPerHour: [],
     getCookies: function () {
         for (let i = 0; i < lima.hoursOfOperation.length; i++) {
-            console.log(`tokyo avg cookies/sale`, this.avg)
-            console.log(`tokyo avg custoemrs/hours`, this.customersPerHour());
             this.cookiesPerHour.push(Math.ceil(this.avg * this.customersPerHour()));
         }
         return this.cookiesPerHour;
@@ -187,7 +162,6 @@ for (let i = 0; i < paris.hoursOfOperation.length; i++) {
     let variable = document.createElement("td");
     totalLima = lima.cookiesPerHour[i] + totalLima;
     variable.innerHTML = `${lima.cookiesPerHour[i]} cookies`;
-    // console.log(`${hoursDemoLima[1]}: ${cookieDemoLima[1]} cookies`)
     hoursArrayLima.append(variable);
 }
 
@@ -207,5 +181,20 @@ for (let i = 0; i < lima.hoursOfOperation.length; i++) {
     let totalHoursOpen = document.createElement("td");
     totalHoursOpen.innerHTML = `${lima.hoursOfOperation[i]}`;
     openHoursArray.append(totalHoursOpen);
-
 }
+// lab 9
+
+let form = document.createElement("locationForm");
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    let storeLocation = document.getElementById('location').value;
+
+    if (storeLocation.values == ""){
+        alert("Invalid Store")
+    }else{
+        alert("Store Location Saved")
+    }
+    let locationNew = 
+})
