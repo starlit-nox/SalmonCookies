@@ -196,5 +196,5 @@ form.addEventListener('submit', (e) => {
     }else{
         alert("Store Location Saved")
     }
-    let locationNew = 
-})
+    let locationNew = storeLocation()
+});
