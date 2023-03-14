@@ -2,7 +2,6 @@
 
 function getRandom(max, min) {
     return Math.random() * (max - min) + min;
-    // 0 >= random # <=1 * limit
 }
 
 // seattle sales
@@ -184,17 +183,20 @@ for (let i = 0; i < lima.hoursOfOperation.length; i++) {
 }
 // lab 9
 
-let form = document.createElement("locationForm");
+function newLocation() {
+    let newTime = 0;
+    let newHoursArray = document.querySelector('outputNew')
+    newHoursArray.append(newTime);
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
+    let addStore = document.createElement("tr");
+    let addCookies = document.createElement("td");
+    addCookies.append(addStore);
+    document.getElementById("addLocation").onsubmit();
+}
 
-    let storeLocation = document.getElementById('location').value;
+// let newRow = document.createElement(".outputNew");
+// let form = document.createElement("#location");
 
-    if (storeLocation.values == ""){
-        alert("Invalid Store")
-    }else{
-        alert("Store Location Saved")
-    }
-    let locationNew = storeLocation()
-});
+// function submit() {
+//     output.textcontent += `$()`
+// }
