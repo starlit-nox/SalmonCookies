@@ -26,7 +26,6 @@ seattle.getCookies();
 let totalSeattle = 0;
 let hoursArraySeattle = document.querySelector('.output1')
 for (let i = 0; i < seattle.hoursOfOperation.length; i++) {
-    //hoursDemo[i].innerHTML
     let variable = document.createElement("td");
     totalSeattle = seattle.cookiesPerHour[i] + totalSeattle;
     variable.innerHTML = `${seattle.cookiesPerHour[i]} cookies`;
@@ -85,12 +84,9 @@ const dubai = {
         return this.cookiesPerHour;
     },
 }
-// let hoursDemoDubai = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
-// let cookieDemoDubai = [77, 122, 74, 74, 100, 127, 120, 138, 108, 85, 120, 79, 115, 44];
 dubai.getCookies();
 let totalDubai = 0;
 let hoursArrayDubai = document.querySelector('.output3')
-// for(let i=0; i < this.hoursOfOperation.length; i++) {
 for (let i = 0; i < dubai.hoursOfOperation.length; i++) {
     let variable = document.createElement("td");
     totalDubai = dubai.cookiesPerHour[i] + totalDubai;
@@ -100,8 +96,6 @@ for (let i = 0; i < dubai.hoursOfOperation.length; i++) {
 let cookieTotal = document.createElement("td");
 cookieTotal.innerHTML = `${totalDubai} cookies`;
 hoursArrayDubai.append(cookieTotal);
-
-// let dubaiCookieTotal = dubai.getCookies[i] += 
 // paris sales
 const paris = {
     min: 20,
@@ -120,8 +114,6 @@ const paris = {
         return this.cookiesPerHour;
     },
 }
-// let hoursDemoParis = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
-// let cookieDemoParis = [80, 58, 85, 72, 78, 85, 56, 80, 67, 51, 85, 83, 66, 80];
 paris.getCookies();
 let totalParis = 0;
 let hoursArrayParis = document.querySelector('.output4')
@@ -152,8 +144,6 @@ const lima = {
         return this.cookiesPerHour;
     },
 }
-// let hoursDemoLima = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
-// let cookieDemoLima = [28, 28, 68, 61, 58, 37, 61, 45, 63, 71, 30, 37, 25, 54];
 lima.getCookies();
 let totalLima = 0;
 let hoursArrayLima = document.querySelector('.output5')
@@ -163,18 +153,16 @@ for (let i = 0; i < paris.hoursOfOperation.length; i++) {
     variable.innerHTML = `${lima.cookiesPerHour[i]} cookies`;
     hoursArrayLima.append(variable);
 }
+//
 
 let cookieTotalLima = document.createElement("td");
 cookieTotalLima.innerHTML = `${totalLima} cookies`;
 hoursArrayLima.append(cookieTotalLima);
-// Here is my attempt at times
 
 let variable = document.createElement("td");
 let openHoursArray = document.querySelector(`#time`)
 openHoursArray.append(variable);
 
-// let timeArray = document.createElement("td");
-// openHoursArray.append(timeArray)
 
 for (let i = 0; i < lima.hoursOfOperation.length; i++) {
     let totalHoursOpen = document.createElement("td");
@@ -183,20 +171,108 @@ for (let i = 0; i < lima.hoursOfOperation.length; i++) {
 }
 // lab 9
 
-function newLocation() {
-    let newTime = 0;
-    let newHoursArray = document.querySelector('outputNew')
-    newHoursArray.append(newTime);
 
-    let addStore = document.createElement("tr");
-    let addCookies = document.createElement("td");
-    addCookies.append(addStore);
-    document.getElementById("addLocation").onsubmit();
-}
+// let cookieTotalLima = document.create
+// function newLocation() {
+//     let newTime = 0;
+//     let newHoursArray = document.querySelector('.outputNew')
+//     newCookieStand.innerHTML= 
+//     newHoursArray.append(newTime);
+
+//     let addStore = document.createElement("tr");
+//     let addCookies = document.createElement("td");
+//     addCookies.append(addStore);
+//     document.getElementById("addLocation").onsubmit();
+//     console.log(newLocation);
+// }
 
 // let newRow = document.createElement(".outputNew");
 // let form = document.createElement("#location");
 
-// function submit() {
+// function newLocation() {
 //     output.textcontent += `$()`
 // }
+
+// function newLocation() {
+// let addFormLocation = document.getElementById("addLocation")
+// addFormLocation.addEventListener("submit", (e) => {
+//     e.preventDefault();
+
+//     let addLocation = document.getElementById('locations').value;
+
+//     if (addLocation.values == "") {
+//         alert("Invalid Storelocation")
+//     } else {
+//         newLocation()
+//         alert("Store Storelocation saved")
+//         console.log(`Storelocation is ${addLocation}`)
+//     }
+//     function newLocation() {
+//         const newLocation = {
+//             min: 2,
+//             max: 65,
+//             avg: 6.3,
+//             location: ``,
+//             hoursOfOperation: ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"],
+//             customersPerHour: function () {
+//                 return getRandom(this.max, this.min);
+//             },
+//             cookiesPerHour: [],
+//             getCookies: function () {
+//                 for (let i = 0; i < this.hoursOfOperation.length; i++) {
+//                     this.cookiesPerHour.push(Math.ceil(this.avg * this.customersPerHour()));
+//                 }
+//                 return this.cookiesPerHour;
+//             }
+//         }
+//         newLocation.getCookies();
+//         let totalLocal = 0;
+//         let hoursArrayNewLocal = document.querySelector('.outputNew')
+//         for (let i = 0; i < seattle.hoursOfOperation.length; i++) {
+//             let variable = document.createElement("td");
+//             totalLocal = newLocation.cookiesPerHour[i] + totalLocal;
+//             variable.innerHTML = `${newLocation.cookiesPerHour[i]} cookies`;
+//             hoursArrayNewLocal.append(variable);
+//         }
+
+//         let cookieTotalLocal = document.createElement("td");
+//         cookieTotalLocal.innerHTML = `${totalLocal} cookies`;
+//         hoursArrayNewLocal.append(cookieTotalLocal);
+//     }
+
+// }
+// );
+
+
+function newLocation() {
+    const newLocation = {
+        min: 2,
+        max: 65,
+        avg: 6.3,
+        location: ``,
+        hoursOfOperation: ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"],
+        customersPerHour: function () {
+            return getRandom(this.max, this.min);
+        },
+        cookiesPerHour: [],
+        getCookies: function () {
+            for (let i = 0; i < this.hoursOfOperation.length; i++) {
+                this.cookiesPerHour.push(Math.ceil(this.avg * this.customersPerHour()));
+            }
+            return this.cookiesPerHour;
+        }
+    }
+    newLocation.getCookies();
+    let totalLocal = 0;
+    let hoursArrayNewLocal = document.querySelector('.outputNew')
+    for (let i = 0; i < seattle.hoursOfOperation.length; i++) {
+        let variable = document.createElement("td");
+        totalLocal = newLocation.cookiesPerHour[i] + totalLocal;
+        variable.innerHTML = `${newLocation.cookiesPerHour[i]} cookies`;
+        hoursArrayNewLocal.append(variable);
+    }
+
+    let cookieTotalLocal = document.createElement("td");
+    cookieTotalLocal.innerHTML = `${totalLocal} cookies`;
+    hoursArrayNewLocal.append(cookieTotalLocal);
+}
