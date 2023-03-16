@@ -1,0 +1,32 @@
+body{
+    background-image: url(https://cdn.discordapp.com/attachments/1070057226334646302/1082408124184530944/fish.jpg);
+    display:flex; flex-direction:column; justify-content:center;
+    min-height:100vh;
+    padding: 0px 50px 0px 50px;
+}
+.outline {
+    font-size: xx-large;
+    font-family: 'Solitreo';
+    color: salmon;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    align-items: center;
+}
+
+.header {
+    margin: auto;
+    width: 50%;
+    border: 3px;
+    padding: 10px;
+}
+
+.header > h1 {
+    padding: 0px 0px 0px 50px;
+}
+
+.menu-bg {
+    background-color: white;
+}
+
+.body {
+    flex-direction: column;
+}
