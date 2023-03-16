@@ -1,17 +1,21 @@
 body{
     background-image: url(https://cdn.discordapp.com/attachments/1070057226334646302/1082408124184530944/fish.jpg);
-    font-family: 'IBM Plex Serif';
     display:flex; flex-direction:column; justify-content:center;
     min-height:100vh;
     padding: 0px 50px 0px 50px;
 }
 
+
 .whole-page{
     background-color: white;
 }
 
-table, tr, td, div {
+table, tr, td, {
     background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
     font-family: 'IBM Plex Serif';
 }
 
